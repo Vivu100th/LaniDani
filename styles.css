@@ -1,0 +1,251 @@
+/* div 100% là full màn hình */
+/* Define variables */
+:root {
+    --primary-color: #106a39;
+    --primary-text-color: #333;
+    --primary-font-family: "Roboto", sans-serif;
+}
+
+/* Reset css */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*header {
+    background: url(images/slider-1.jpg);
+    background-size: 100%;
+    height: 100%;
+}*/
+
+/* Set default css */
+body {
+    color: var(--primary-text-color);
+    font-family: var(--primary-font-family);
+}
+
+a {
+    text-decoration: none;
+    color: var(--primary-text-color);
+}
+
+.mb-20 {
+    margin-bottom: 20px !important;
+}
+
+.mb-30 {
+    margin-bottom: 30px !important;
+}
+
+/* Layout */
+.container {
+    /* or wrap */
+    max-width: 1280px;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -15px;
+    margin-right: -15px;
+}
+
+.col-3 {
+    width: 25%;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-bottom: 60px;
+}
+
+.col-4 {
+    width: 33.33%;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-bottom: 30px;
+}
+
+.col-6 {
+    width: 50%;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+/* Header */
+/* Presentation */
+.primary-menu {
+    list-style-type: none;
+    /* Remove bullets */
+    display: flex;
+}
+
+.primary-menu>li>a {
+    display: inline-block;
+    padding: 15px 10px;
+    background-color: rgba(0, 0, 0, 0.2);
+    color: #fff;
+    text-transform: uppercase;
+}
+
+.primary-menu>li:hover>a,
+.primary-menu>li.current-item>a {
+    background-color: var(--primary-color);
+}
+
+/* Main */
+
+.introduction {
+    padding-top: 160px;
+    padding-bottom: 80px;
+}
+
+.introduction img {
+    width: 100%;
+    max-width: 100%;
+}
+
+.introduction .extra-info {
+    font-weight: bold;
+}
+
+.introduction .title {
+    font-size: 48px;
+    font-weight: bold;
+    color: var(--primary-color);
+    margin-bottom: 5px;
+}
+
+.introduction .content {
+    text-align: justify;
+    margin-top: 5px;
+}
+
+.introduction-man {
+    margin-top: -80px;
+}
+
+.golf-service {
+    background-image: url("./images/background-service.jpg");
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-size: cover;
+}
+
+.overlay {
+    padding-top: 80px;
+    padding-bottom: 80px;
+    background-color: rgba(255, 255, 255, 0.75);
+}
+
+.golf-service .extra-info {
+    text-align: center;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: var(--primary-color);
+}
+
+.golf-service .title {
+    font-size: 48px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.golf-service .content {
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+.golf-service-item {
+    box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.5);
+    position: relative;
+}
+
+.golf-service-item img {
+    width: 100%;
+    max-width: 100%;
+}
+
+.other-services .extra-info {
+    text-align: center;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: var(--primary-color);
+}
+
+.other-services .title {
+    font-size: 48px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.other-services .content {
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+.other-services-item {
+    width: 300px;
+    height: 300px;
+    padding: 20px;
+    box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
+    position: relative;
+}
+
+.other-services-item img {
+    width: 80px;
+    height: auto;
+    margin-bottom: 16px;
+}
+
+.info-group {
+    padding: 10px;
+    background-color: #fff;
+    text-align: center;
+}
+
+.sub-title {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.sale-off {
+    padding: 10px 15px;
+    background-color: blue;
+    color: #fff;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+/* Footer*/
+.go-to-top {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: var(--primary-color);
+    color: #fff;
+    text-align: center;
+    line-height: 40px;
+    cursor: pointer;
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+}
+
+@media (max-width: 768px) {
+
+    .col-6,
+    .col-3,
+    .col-4 {
+        width: 100%;
+    }
+}
