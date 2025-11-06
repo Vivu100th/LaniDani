@@ -10,27 +10,46 @@
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 	<link href="https://fonts.googleapis.com/css?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
 		rel="stylesheet" />
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+		integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
 	<link rel="stylesheet" href="styles.css" />
 	<!-- css để cuối cùng -->
 </head>
 
 <body>
 	<header>
-		<img src="images/slider-1.jpg" width="1280px" />
-		<a href="#" class="logo">
-			<img src="./images/logo.png" alt="Lani & Dani Company" />
-		</a>
-		<nav>
-			<ul class="primary-menu">
-				<li class="current-item"><a href="">TRANG CHỦ</a></li>
-				<li><a href="">DỊCH VỤ GOLF</a></li>
-				<li><a href="">DỊCH VỤ KHÁC</a></li>
-				<li class="has-child"><a href="">TIN TỨC</a></li>
-				<li><a href="">CÔNG TRÌNH</a></li>
-				<li><a href="">GIỚI THIỆU</a></li>
-				<li><a href="">LIÊN HỆ</a></li>
-			</ul>
-		</nav>
+
+		<div class="slider">
+			<img src="images/slider-1.jpg" alt="">
+		</div>
+		<div class="logo-nav">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-2">
+						<a href="#" class="logo">
+							<img src="./images/logo.png" alt="Lani & Dani Company" width="200px" />
+						</a>
+					</div>
+					<div class="col-md-10 d-sm-none d-md-block">
+						<nav>
+							<ul class="primary-menu">
+								<li class="current-item"><a href="">TRANG CHỦ</a></li>
+								<li><a href="">DỊCH VỤ GOLF</a></li>
+								<li><a href="">DỊCH VỤ KHÁC</a></li>
+								<li class="has-child"><a href="">TIN TỨC</a></li>
+								<li><a href="">CÔNG TRÌNH</a></li>
+								<li><a href="">GIỚI THIỆU</a></li>
+								<li><a href="">LIÊN HỆ</a></li>
+							</ul>
+						</nav>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!-- <img src="images/slider-1.jpg" width="1280px" /> -->
+
+
 	</header>
 
 	<main>
@@ -39,7 +58,7 @@
 			<div class="container">
 				<div class="row">
 					<!-- có 12 phần 50% là col-6 -->
-					<div class="col-6">
+					<div class="col-12 col-md-6">
 						<p class="extra-info">Chúng tôi là ai?</p>
 						<h1 class="title">Công ty LANI & DANI</h1>
 						<p class="content">
@@ -58,10 +77,10 @@
 							dựng.
 						</p>
 					</div>
-					<div class="col-3">
-						<img src="images/introduction-girl.jpg" width="200px" />
+					<div class="col-12 col-md-3">
+						<img class="introduction-girl" src="images/introduction-girl.jpg" width="200px" />
 					</div>
-					<div class="col-3">
+					<div class="col-12 col-md-3">
 						<img class="introduction-man" src="images/introduction-man.jpg" width="200px" />
 					</div>
 				</div>
@@ -80,7 +99,7 @@
 						năng.
 					</p>
 					<div class="row">
-						<div class="col-4">
+						<div class="col-12 col-md-4">
 							<article class="golf-service-item">
 								<a href=""><img src="images/service-design.jpg" /></a>
 								<div class="info-group">
@@ -92,7 +111,7 @@
 								</div>
 							</article>
 						</div>
-						<div class="col-4">
+						<div class="col-12 col-md-4">
 							<article class="golf-service-item">
 								<a href=""><img src="images/service-construction.jpg" /></a>
 								<div class="info-group">
@@ -103,7 +122,7 @@
 								</div>
 							</article>
 						</div>
-						<div class="col-4">
+						<div class="col-12 col-md-4">
 							<article class="golf-service-item">
 								<a href=""><img src="images/service-operation.jpg" /></a>
 								<div class="info-group">
@@ -115,7 +134,7 @@
 								<div class="sale-off">- 50%</div>
 							</article>
 						</div>
-						<div class="col-4">
+						<div class="col-12 col-md-4">
 							<article class="golf-service-item">
 								<a href=""><img src="images/service-maintenance.jpg" /></a>
 								<div class="info-group">
@@ -126,7 +145,7 @@
 								</div>
 							</article>
 						</div>
-						<div class="col-4">
+						<div class="col-12 col-md-4">
 							<article class="golf-service-item">
 								<a href=""><img src="images/service-training.jpg" /></a>
 								<div class="info-group">
@@ -138,7 +157,7 @@
 								</div>
 							</article>
 						</div>
-						<div class="col-4">
+						<div class="col-12 col-md-4">
 							<article class="golf-service-item">
 								<a href=""><img src="images/service-lawn-care.jpg" /></a>
 								<div class="info-group">
@@ -162,11 +181,10 @@
 					<h1 class="title">Các Dịch Vụ Khác</h1>
 					<p class="content">
 						Với định hướng phát triển đa ngành nghề, ngoài lĩnh vực sân Golf, Công ty TNHH LANI & DANI còn
-						tập trung
-						hoạt động kinh doanh trong các lĩnh vực dưới đây
+						tập trung hoạt động kinh doanh trong các lĩnh vực dưới đây
 					</p>
 					<div class="row">
-						<div class="col-3">
+						<div class="col-12 col-md-3">
 							<article class="other-services-item">
 								<div class="info-group">
 									<img src="images/house.png" alt="" />
@@ -174,7 +192,7 @@
 								</div>
 							</article>
 						</div>
-						<div class="col-3">
+						<div class="col-12 col-md-3">
 							<article class="other-services-item">
 								<div class="info-group">
 									<img src="images/scaffolding.png" alt="" />
@@ -182,7 +200,7 @@
 								</div>
 							</article>
 						</div>
-						<div class="col-3">
+						<div class="col-12 col-md-3">
 							<article class="other-services-item">
 								<div class="info-group">
 									<img src="images/drill.png" alt="" />
@@ -190,7 +208,7 @@
 								</div>
 							</article>
 						</div>
-						<div class="col-3">
+						<div class="col-12 col-md-3">
 							<article class="other-services-item">
 								<div class="info-group">
 									<img src="images/blueprint.png" alt="" />
@@ -198,7 +216,7 @@
 								</div>
 							</article>
 						</div>
-						<div class="col-3">
+						<div class="col-12 col-md-3">
 							<article class="other-services-item">
 								<div class="info-group">
 									<img src="images/conversation.png" alt="" width="100px" />
@@ -206,7 +224,7 @@
 								</div>
 							</article>
 						</div>
-						<div class="col-3">
+						<div class="col-12 col-md-3">
 							<article class="other-services-item">
 								<div class="info-group">
 									<img src="images/agreement.png" alt="" width="100px" />
@@ -214,7 +232,7 @@
 								</div>
 							</article>
 						</div>
-						<div class="col-3">
+						<div class="col-12 col-md-3">
 							<article class="other-services-item">
 								<div class="info-group">
 									<img src="images/location-pin.png" alt="" width="100px" />
@@ -222,7 +240,7 @@
 								</div>
 							</article>
 						</div>
-						<div class="col-3">
+						<div class="col-12 col-md-3">
 							<article class="other-services-item">
 								<div class="info-group">
 									<img src="images/demolition.png" alt="" width="100px" />
