@@ -254,6 +254,36 @@ a {
     right: 0;
 }
 
+.consultant {
+    background-image: url("./images/background-consultant.jpg");
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-size: cover;
+}
+
+.consultant img {
+    display: block;
+    margin: auto;
+    margin-top: 80px;
+}
+
+.consultant .title {
+    font-size: 48px;
+    font-weight: bold;
+    color: #fff;
+    margin-bottom: 10px;
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.consultant .content {
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    color: #fff;
+}
+
 /* Footer*/
 .go-to-top {
     width: 40px;
